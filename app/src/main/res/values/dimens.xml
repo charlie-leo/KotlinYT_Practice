@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="primary_text_input_field_corner">16dp</dimen>
+    <dimen name="spaceBetweenForm">10dp</dimen>
+</resources>

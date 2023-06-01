@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/secondaryLight">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/topGuidline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/bottomGuidline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_end="30dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/leftGuidline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="20dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/rightGuidline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="20dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/userNameInputLayout"
+            style="@style/PrimaryInputTextLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spaceBetweenForm"
+            app:layout_constraintBottom_toTopOf="@+id/emailInputLayout"
+            app:layout_constraintEnd_toStartOf="@+id/rightGuidline"
+            app:layout_constraintStart_toEndOf="@id/leftGuidline"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/userNameInput"
+                style="@style/PrimaryInputText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/username" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailInputLayout"
+            style="@style/PrimaryInputTextLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spaceBetweenForm"
+            app:layout_constraintBottom_toTopOf="@+id/MobileNumberInputLayout"
+            app:layout_constraintEnd_toStartOf="@+id/rightGuidline"
+            app:layout_constraintStart_toEndOf="@id/leftGuidline"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailInput"
+                style="@style/PrimaryInputText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/email" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/MobileNumberInputLayout"
+            style="@style/PrimaryInputTextLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spaceBetweenForm"
+            app:layout_constraintBottom_toTopOf="@+id/passwordInputLayout"
+            app:layout_constraintEnd_toStartOf="@+id/rightGuidline"
+            app:layout_constraintStart_toEndOf="@id/leftGuidline"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/mobileNumberInput"
+                style="@style/PrimaryInputText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/mobile" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordInputLayout"
+            style="@style/PrimaryInputTextLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spaceBetweenForm"
+            app:layout_constraintBottom_toTopOf="@+id/signUpBtn"
+            app:layout_constraintEnd_toStartOf="@+id/rightGuidline"
+            app:layout_constraintStart_toEndOf="@id/leftGuidline"
+
+             >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordInput"
+                style="@style/PrimaryInputText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/password" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signUpBtn"
+            style="@style/SecondaryButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            android:layout_marginBottom="@dimen/spaceBetweenForm"
+            app:layout_constraintBottom_toTopOf="@+id/alreadyHaveAnAccount"
+            app:layout_constraintEnd_toStartOf="@+id/rightGuidline"
+            app:layout_constraintStart_toEndOf="@id/leftGuidline"
+            />
+
+
+        <TextView
+            android:id="@+id/alreadyHaveAnAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/already_have_account"
+            app:layout_constraintBottom_toBottomOf="@id/bottomGuidline"
+            app:layout_constraintEnd_toStartOf="@id/rightGuidline"
+            app:layout_constraintStart_toEndOf="@id/leftGuidline" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

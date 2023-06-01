@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Kotlin YT Practice</string>
+
+
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+    <string name="mobile">Mobile Number</string>
+    <string name="password">Password</string>
+    <string name="submit">Submit</string>
+    <string name="already_have_account">Already have an account?</string>
+    
+    <string name="join_now">Join Now</string>
+    <string name="register">Register</string>
+    <string name="manage">Manage your</string>
+    <string name="housing">HOUSING</string>
+    <string name="spaces">spaces</string>
+    <string name="on_board_hint">Let’s give your burden to us!</string>
+    <string name="sign_up">Sign Up</string>
+
+</resources>
